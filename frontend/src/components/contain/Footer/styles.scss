@@ -1,0 +1,73 @@
+.footer {
+  padding: 20px 0 20px;
+
+  background-color: rgba(0, 0, 0, 0.87);
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__contain {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+  }
+
+  &__link {
+    font-size: 1.2rem;
+    line-height: 2;
+    color: white;
+
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    line-height: 2.3;
+  }
+
+  &__contact-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+
+    color: white;
+
+
+  }
+
+  &__contact &__contact-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 10px;
+
+    fill: yellow;
+  }
+
+  &__contact-txt {
+    font-size: 1rem;
+    color: white;
+    transition: color 0.2s ease-in-out;
+  }
+
+  @media (hover: hover) {
+    &__contact-txt:hover, &__link:hover {
+      color: yellow;
+      cursor: pointer;
+    }
+  }
+
+  &__contact--icons {
+    margin-top: 15px;
+  }
+
+  &__contact--icons svg {
+    width: 2.3rem;
+    height: 2.3rem;
+    margin-right: 12px;
+
+    cursor: pointer;
+  }
+
+}
